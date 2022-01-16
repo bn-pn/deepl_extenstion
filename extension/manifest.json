@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "DeepL翻訳",
+  "version": "1.0",
+  "permissions": [
+    "https://script.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*", 
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "presistent": false
+  }
+}
